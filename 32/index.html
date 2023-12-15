@@ -10,9 +10,13 @@
         const value1 = "25.3";
         const value2 = "786.867";
 
+        const result = Number(value1) + Number(value2);
+        let formatter = new Intl.NumberFormat("ru", {
+        style: "currency",
+        currency: "RUB"
+        });
 
-        const result = '';
-
+        console.log(formatter.format(result));
 
     </script>
 </body>
