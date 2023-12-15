@@ -7,8 +7,30 @@
 </head>
 <body>
     <script>
-        const age = 10
-        console.log('age: ', Number(age), Boolean(age), String(age));
-    </script>
+        const Undefined = undefined;
+        const Null = null;
+        const BooleanValue = true;
+        const NumberValue = 10;
+        const BigIntValue = BigInt(9007199254740991);
+        const SymbolValue = Symbol('description');
+        const StringValue = 'Hello';
+      
+        // Вывод в консоль
+        console.log('Undefined: ', Number(Undefined), Boolean(Undefined), String(Undefined));
+
+        console.log('Null: ', Number(Null), Boolean(Null), String(Null));
+
+        console.log('Boolean: ', Number(BooleanValue), Boolean(BooleanValue), String(BooleanValue));
+
+        console.log('Number: ', Number(NumberValue), Boolean(NumberValue), String(NumberValue));
+
+        // Примечание: BigInt не имеет логического представления
+        console.log('BigInt: ', Number(BigIntValue), String(BigIntValue));
+
+        // Примечание: Symbol не имеет прямого преобразования в число или строку
+        console.log('Symbol: Не может быть преобразован в число или строку');
+
+        console.log('String: ', Number(StringValue), Boolean(StringValue), String(StringValue));
+      </script>
 </body>
 </html>
