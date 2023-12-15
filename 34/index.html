@@ -24,8 +24,11 @@
 
         const divider = () => ({})
 
-        const result = (`${object1}` + object1) + divider + (`${object2}` + object2) + divider + (`${object3}` + object3)
-        console.log(result)
+        const result = (`У студента ${object1.name} в кошельке:${object1.money} рублей | `) +
+                       (`У студента ${object2.name} в кошельке:${object2.money} рублей | `) +
+                       (`У студента ${object3.name} в кошельке:${object3.money} рублей`);
+
+        console.log(result);
     </script>
 </body>
 </html>
