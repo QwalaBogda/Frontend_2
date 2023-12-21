@@ -1,18 +1,21 @@
-const firstName = 'Иван';
+const firstName = 'Алексей';
 const lastName = 'Иванов';
-const middleName = 'Иванович';
-const birthYear = 1990;
-const direction = 'Программирование';
+const patronymic = 'Петрович';
+const yearOfBirth = 1990;
+const profile = 'Информатика и вычислительная техника';
 
-// Конкатенация строк с помощью оператора плюс +
-const result1 =  'Имя: ' + firstName + '\nФамилия: ' + lastName + '\nОтчечтво: ' + middleName + '\nГод рождения: ' + birthYear + '\nНаправление: ' + direction;
+const result1 = 'firstName: ' + firstName + '\n' +
+'lastName: ' + lastName + '\n' +
+'patronymic: ' + patronymic + '\n' +
+'yearOfBirth: ' + yearOfBirth + '\n' +
+'profile: ' + profile;
 
-// Конкатенация строк с помощью бэктиков ``
-const result2 = `Имя: ${firstName} \nФамилия: ${lastName} \nОтчество: ${middleName} \nГод рождения: ${birthYear}, \nНаправление: ${direction}`;
-
-// Вывод в консоль
-console.log("Способ 1:");
 console.log(result1);
 
-console.log("\nСпособ 2:");
+const result2 = `firstName: ${firstName}
+lastName: ${lastName}
+patronymic: ${patronymic}
+yearOfBirth: ${yearOfBirth}
+profile: ${profile}`;
+
 console.log(result2);
