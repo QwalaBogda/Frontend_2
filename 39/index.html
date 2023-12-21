@@ -54,6 +54,14 @@
         function getTotal(cart, products) {
             let sum = 0;
 
+            cart.forEach(item => {
+                const product = products.find(p => p.id === item.id);
+                if (product) {
+                    sum += product.price * item.quantity;
+                }
+            });
+
+            return sum.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' });
         }
 
         const result = getTotal(cart, products);
